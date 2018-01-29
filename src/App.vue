@@ -1,49 +1,26 @@
 <template>
   <div class="app">
     <getData></getData>
-    <showData :sum="sum" :stats="stats"></showData>
+    <showData :stats="stats"></showData>
   </div>
+
+
 </template>
 
 <script>
-  import Libs from './libs'
+  import Libs from './libs/libs'
+  import Res from './stats'
 
   export default {
     name: 'app',
     data () {
       return {
-        testData: testData,
-        stats: Libs.getStats(testData),
-        sum: Libs.getStatsSum(testData)
+        stats: Libs.getStats(JSON.parse(Res), 'event', 'event_value')
       }
-    }
+    },
   }
 
-let testData =[{
-    registration: 30,
-    link_visitor: 20,
-    payment: 25000001,
-    date: '2017-06-07',
-  },{
-    registration: 30,
-    link_visitor: 20,
-    payment: 2503001,
-    date: '2017-06-07'
-  },{
-    registration: 30,
-    link_visitor: 20,
-    payment: 25000001,
-    date: '2017-06-08'
-  },{
-    registration: 30,
-    link_visitor: 20,
-    payment: 25000001,
-    date: '2017-06-09'
-  },
-  ];
-
-
-
+  let testStat = JSON.parse(Res);
 </script>
 
 <style lang="scss">
