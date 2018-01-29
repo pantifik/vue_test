@@ -1,0 +1,201 @@
+export default `[{
+  "date": "2017-12-13",
+  "event": "PAYMENT",
+  "event_value": 61
+}, {
+  "date": "2017-12-30",
+  "event": "PAYMENT",
+  "event_value": 64
+}, {
+  "date": "2017-12-04",
+  "event": "PAYMENT",
+  "event_value": 97
+}, {
+  "date": "2018-01-19",
+  "event": "LINK_VISITOR",
+  "event_value": 96
+}, {
+  "date": "2017-12-24",
+  "event": "PAYMENT",
+  "event_value": 80
+}, {
+  "date": "2018-01-02",
+  "event": "REGISTRATION",
+  "event_value": 57
+}, {
+  "date": "2017-12-09",
+  "event": "PAYMENT",
+  "event_value": 54
+}, {
+  "date": "2018-01-23",
+  "event": "PAYMENT",
+  "event_value": 50
+}, {
+  "date": "2018-01-15",
+  "event": "PAYMENT",
+  "event_value": 87
+}, {
+  "date": "2017-12-23",
+  "event": "REGISTRATION",
+  "event_value": 95
+}, {
+  "date": "2018-01-04",
+  "event": "PAYMENT",
+  "event_value": 12
+}, {
+  "date": "2017-12-26",
+  "event": "LINK_VISITOR",
+  "event_value": 39
+}, {
+  "date": "2018-01-06",
+  "event": "LINK_VISITOR",
+  "event_value": 42
+}, {
+  "date": "2017-12-31",
+  "event": "REGISTRATION",
+  "event_value": 88
+}, {
+  "date": "2018-01-25",
+  "event": "REGISTRATION",
+  "event_value": 19
+}, {
+  "date": "2017-12-10",
+  "event": "PAYMENT",
+  "event_value": 63
+}, {
+  "date": "2018-01-23",
+  "event": "LINK_VISITOR",
+  "event_value": 86
+}, {
+  "date": "2017-12-13",
+  "event": "PAYMENT",
+  "event_value": 29
+}, {
+  "date": "2018-01-27",
+  "event": "PAYMENT",
+  "event_value": 98
+}, {
+  "date": "2018-01-08",
+  "event": "LINK_VISITOR",
+  "event_value": 28
+}, {
+  "date": "2017-12-04",
+  "event": "PAYMENT",
+  "event_value": 97
+}, {
+  "date": "2017-12-19",
+  "event": "REGISTRATION",
+  "event_value": 16
+}, {
+  "date": "2018-01-21",
+  "event": "REGISTRATION",
+  "event_value": 92
+}, {
+  "date": "2017-12-26",
+  "event": "REGISTRATION",
+  "event_value": 62
+}, {
+  "date": "2017-12-12",
+  "event": "REGISTRATION",
+  "event_value": 27
+}, {
+  "date": "2018-01-17",
+  "event": "REGISTRATION",
+  "event_value": 4
+}, {
+  "date": "2018-01-16",
+  "event": "PAYMENT",
+  "event_value": 43
+}, {
+  "date": "2018-01-04",
+  "event": "PAYMENT",
+  "event_value": 90
+}, {
+  "date": "2018-01-21",
+  "event": "LINK_VISITOR",
+  "event_value": 94
+}, {
+  "date": "2017-12-14",
+  "event": "PAYMENT",
+  "event_value": 26
+}, {
+  "date": "2017-12-09",
+  "event": "LINK_VISITOR",
+  "event_value": 82
+}, {
+  "date": "2018-01-24",
+  "event": "PAYMENT",
+  "event_value": 94
+}, {
+  "date": "2018-01-20",
+  "event": "PAYMENT",
+  "event_value": 25
+}, {
+  "date": "2018-01-22",
+  "event": "PAYMENT",
+  "event_value": 21
+}, {
+  "date": "2018-01-12",
+  "event": "REGISTRATION",
+  "event_value": 19
+}, {
+  "date": "2017-12-14",
+  "event": "LINK_VISITOR",
+  "event_value": 37
+}, {
+  "date": "2017-12-07",
+  "event": "LINK_VISITOR",
+  "event_value": 36
+}, {
+  "date": "2018-01-08",
+  "event": "PAYMENT",
+  "event_value": 4
+}, {
+  "date": "2017-12-26",
+  "event": "LINK_VISITOR",
+  "event_value": 96
+}, {
+  "date": "2018-01-11",
+  "event": "REGISTRATION",
+  "event_value": 54
+}, {
+  "date": "2017-12-20",
+  "event": "PAYMENT",
+  "event_value": 29
+}, {
+  "date": "2017-12-18",
+  "event": "PAYMENT",
+  "event_value": 100
+}, {
+  "date": "2017-12-08",
+  "event": "LINK_VISITOR",
+  "event_value": 70
+}, {
+  "date": "2017-12-24",
+  "event": "PAYMENT",
+  "event_value": 77
+}, {
+  "date": "2017-12-04",
+  "event": "REGISTRATION",
+  "event_value": 18
+}, {
+  "date": "2018-01-21",
+  "event": "REGISTRATION",
+  "event_value": 62
+}, {
+  "date": "2018-01-16",
+  "event": "PAYMENT",
+  "event_value": 84
+}, {
+  "date": "2017-12-21",
+  "event": "REGISTRATION",
+  "event_value": 34
+}, {
+  "date": "2017-12-11",
+  "event": "LINK_VISITOR",
+  "event_value": 65
+}, {
+  "date": "2017-12-27",
+  "event": "LINK_VISITOR",
+  "event_value": 92
+}]`
