@@ -1,17 +1,12 @@
 <template>
   <div class="showData">
-    <p>showData</p>
-
     <div class="container">
       <sumTable class="sumTable"
                 :data="sum"
-                v-if="state"
       ></sumTable>
       <chart class="chart"
              :stats="statsForChart"
-             v-if="state"
       ></chart>
-      <p v-else>Введите ID пользователя</p>
     </div>
 
   </div>
@@ -24,25 +19,23 @@
 
   export default {
     name: "show-data",
-    props: ['stats'],
-    data() {
-      return {
-        state: true}
-    },
+    props: ['stats', 'selectedDate'],
     computed: {
       sum(){
         let sum = {};
 
         for (let i in this.stats) {
-          for (let key in this.stats[i])
-            if (!sum[key]) {
-              sum[key] = this.stats[i][key];
+          if(i >= this.selectedDate.start && i <= this.selectedDate.end){
+            for (let key in this.stats[i]){
+              if (!sum[key]) {
+                sum[key] = this.stats[i][key];
+              }
+              else{
+                sum[key] += this.stats[i][key]
+              }
             }
-            else{
-              sum[key] += this.stats[i][key]
           }
         }
-
         return sum;
       },
       statsForChart(){
@@ -50,9 +43,12 @@
             temp;
 
         for (let key in this.stats) {
-          temp = this.stats[key];
-          temp.date = +key;
-          result.push(temp)
+
+          if(key >= this.selectedDate.start && key <= this.selectedDate.end){
+            temp = this.stats[key];
+            temp.date = +key;
+            result.push(temp)
+          }
         }
 
         return result.sort(function(a, b){
@@ -73,12 +69,12 @@
 
 
   .container
-    display: flex;
+    display: flex
     align-items: center
 
 
   .sumTable
-    flex: 1 1 30%;
+    flex: 1 1 30%
     margin-right: 10px
 
 

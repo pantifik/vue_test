@@ -1,13 +1,16 @@
 <template>
   <div class="summary">
-    <row title="Переходы" :value="data.registration"></row>
-    <row title="Регистрации" :value="data.link_visitor"></row>
-    <row title="Доход" :value="data.payment"></row>
+    <row title="Переходы" :value="data.registration || 0"></row>
+    <row title="Регистрации" :value="data.link_visitor || 0"></row>
+    <row
+      title="Доход"
+      :value="data.payment || 0"
+    ></row>
   </div>
 </template>
 
 <script>
-  import SummaryRow from './SummaryRow'
+  import SummaryRow from './SumRow'
   export default {
     name: "summaryTable",
     props: ['data'],

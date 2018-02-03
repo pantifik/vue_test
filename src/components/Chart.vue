@@ -1,6 +1,6 @@
 <template>
   <div class="chartCont">
-    <lineChart :chartLabels="chartLabels" :chartLines="chartLines"></lineChart>
+    <lineChart :chartLabels="chartLabels" :chartLines="chartLines" :chartData="chartData"></lineChart>
   </div>
 
 
@@ -32,17 +32,20 @@
         lines.visitor = this.stats.map(function(item){
           return item.link_visitor || 0
         });
-
         return lines;
+      },
+      chartData() {
+        return {
+          'chartLines': this.chartLines,
+          'chartLabels': this.chartLabels
+        }
       }
-
     },
+
     components: {
       'LineChart': LineChart,
     }
   }
-
-  let data= [60, 55, 32];
 </script>
 <style scoped>
 </style>
