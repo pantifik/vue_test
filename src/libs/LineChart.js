@@ -1,4 +1,5 @@
 import { Line } from 'vue-chartjs'
+import Dictionary from './dictionary'
 
 export default {
   extends: Line,
@@ -9,21 +10,21 @@ export default {
         labels: this.chartData.chartLabels,
         datasets: [
           {
-            label: 'Registration',
+            label: Dictionary.registration || 'Registration',
             yAxesID: 'small',
             borderColor: '#D1D400',
             fill: false,
             data: this.chartData.chartLines.registration
           },
           {
-            label: 'Payment',
+            label: Dictionary.payment || 'Payment',
             yAxesID: 'money',
             borderColor: '#6FD459',
             fill: false,
             data: this.chartData.chartLines.payment
           },
           {
-            label: 'Visitor',
+            label: Dictionary.link_visitor || 'Visitor',
             yAxisID: 'small',
             borderColor: '#524ED4',
             fill: false,
@@ -60,6 +61,17 @@ export default {
             }
           }]
         },
+        tooltips: {
+          callbacks: {
+            label: function(item, data) {
+              let formatedData;
+              if (item.datasetIndex == 1) {
+                formatedData = item.yLabel.toLocaleString('ru-RU', { style: 'currency', currency: 'RUB' })
+              }
+              return ` ${data.datasets[item.datasetIndex].label}: ${formatedData || item.yLabel}`
+            }
+          }
+        },
         maintainAspectRatio: false
       }
     }
@@ -73,19 +85,19 @@ export default {
         labels: newChartData.chartLabels,
           datasets: [
           {
-            label: 'Registration',
+            label: Dictionary.registration || 'Registration',
             borderColor: '#D1D400',
             fill: false,
             data: newChartData.chartLines.registration
           },
           {
-            label: 'Payment',
+            label: Dictionary.payment || 'Payment',
             borderColor: '#6FD459',
             fill: false,
             data: newChartData.chartLines.payment
           },
           {
-            label: 'Visitor',
+            label: Dictionary.link_visitor || 'Visitor',
             borderColor: '#524ED4',
             fill: false,
             data: newChartData.chartLines.visitor

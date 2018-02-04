@@ -1,9 +1,9 @@
 <template>
   <div class="summary">
-    <row title="Переходы" :value="data.registration || 0"></row>
-    <row title="Регистрации" :value="data.link_visitor || 0"></row>
+    <row :title="dictionary.link_visitor || 'link_visitor'" :value="data.link_visitor || 0"></row>
+    <row :title="dictionary.registration || 'registration'" :value="data.registration || 0"></row>
     <row
-      title="Доход"
+      :title="dictionary.payment || 'payment'"
       :value="data.payment || 0"
     ></row>
   </div>
@@ -11,9 +11,15 @@
 
 <script>
   import SummaryRow from './SumRow'
+  import Dictionary from '../libs/dictionary.js'
   export default {
     name: "summaryTable",
     props: ['data'],
+    data() {
+      return {
+        dictionary: Dictionary
+      }
+    },
     components: {
       'row': SummaryRow
     }
