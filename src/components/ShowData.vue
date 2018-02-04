@@ -62,23 +62,23 @@
     }
   }
 </script>
-<style scoped lang="sass">
-  .showData
-    padding: 0 10px
-    background-color: #D2D7B7
+<style scoped lang="scss">
+  .showData{
+    padding: 0 10px;
+    background-color: #D2D7B7;
+}
 
+  .container{
+    display: flex;
+    align-items: center;
+}
 
-  .container
-    display: flex
-    align-items: center
+  .sumTable{
+    flex: 1 1 30%;
+    margin-right: 10px;
+}
 
-
-  .sumTable
-    flex: 1 1 30%
-    margin-right: 10px
-
-
-  .chart
+  .chart{
     flex: 1 1 auto
-
+}
 </style>

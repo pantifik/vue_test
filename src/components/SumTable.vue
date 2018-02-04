@@ -27,21 +27,23 @@
 
 </script>
 
-<style scoped lang="sass">
-  .summary
-    font-size: 18px
+<style scoped lang="scss">
+  .summary{
+    font-size: 18px;
 
-    .row
-      display: flex
-      justify-content: space-between
+    .row{
+      display: flex;
+      justify-content: space-between;
 
-      padding: 0 10px
+      padding: 0 10px;
 
-      line-height: 3em
+      line-height: 3em;
 
-      &:nth-child(odd)
-        background-color: #0E023B
-        color: white
-
+      &:nth-child(odd){
+        background-color: #0E023B;
+        color: white;
+      }
+    }
+}
 
 </style>

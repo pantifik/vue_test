@@ -10,7 +10,8 @@
 
 <script>
   import Libs from './libs/libs'
-  import Res from './stats'
+  import GetData from './components/GetData'
+  import ShowData from './components/ShowData'
 
   export default {
     name: 'app',
@@ -33,12 +34,16 @@
       changeDate(dateObj) {
         this.selectedDate = dateObj
       }
+    },
+    components: {
+      getData: GetData,
+      showData: ShowData
     }
   }
 
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
   .wrapper{
     max-width: 1200px;
     margin: 0 auto;
